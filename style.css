@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+h1,h2,h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    margin: 0;
+}
+h1 {
+    font-size: 2rem;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+/* layout */
+header {
+    /* border: 2px solid #1792d2; */
+    padding: 2em 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0 0 2em 0;
+}
+.container {
+    /* border: 2px solid lightblue; */
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto; 
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media (min-width: 680px) {
+    .container-flex {
+        flex-direction: row;
+    }
+    main {
+        width: 70%;
+    }
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+}
+/* Navigation Bar */
+nav ul {
+    /* border: 2px solid #1792d2; */
+    
+    /* remove bullet points from the list */
+    list-style: none;
+    padding: 0;
+    
+    /* convert flex and center all list items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav li {
+    /* border: 2px solid #1792d2; */
+    
+    /* bring space left and right to all list items */
+    margin: 1em;
+}
+nav a {
+    color: #707070;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;   
+}
+nav a:focus, nav a:hover {
+    color: green;
+}
+.current-page {
+    border-bottom: 1px solid blue;
+}
+
+.current-page:hover, .current-page:focus {
+    color: #707070;
+}
+.sub {
+    font-size: .75rem;
+    font-weight: 700;
+    color: #1792D2;
+    margin: 0;
+}
+/* nav bar media query */
+/* Designed for mobile, media query converts to desktop */
+@media (min-width: 680px) {
+
+    nav ul {
+        flex-direction: row;
+    }  
+    nav li {
+        margin-bottom: 0 1em;
+    }
+}
+/* Main content Layout */
+.article-featured {
+    padding: 0 2em 2em 0;
+    border-bottom: 2px solid gray;
+    margin-bottom: 2em;
+}
+.article-image {
+    width: 90%;
+}
+.article-title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+.article-strong {
+    font-size: 700;
+}
+.article-info,.article-read-more {
+    font-size: .875rem;
+}
+.article-info {
+    color: #707070;
+}
+.article-read-more {
+    color: #1792D2;
+    text-decoration: none;
+    font-weight: 700;
+}
+.article-read-more:hover, .article-read-more:focus {
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+.article-recent  {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2em 0;
+}
+.article-recent-secondary {
+    padding: 0 2em 0 0;
+    text-align: right;
+}
+@media (min-width: 680px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 70%;
+    }
+
+    .article-recent-secondary {
+        text-align: left;
+        width: 30%;
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .article-image {
+        order: -1;
+    }
+
+    .article-info {
+        order: 0
+    }
+
+    .article-title {
+        order: 1;
+    }
+
+    .article-body {
+        order: 2;
+    }
+
+    .article-read-more {
+        order: 3;
+    }
+
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    }
+    
+}
+/* sidebar */
+.sidebar {
+    text-align: left;
+}
+.sidebar-widget {
+    border: 20px solid #efefef;
+    font-size: 0.825rem;
+    padding: 0 1em;
+}
+.widget-image {
+    width: 50%;
+    margin: 2em auto;
+}
+.widget-recent-post {
+    border-bottom: 2px solid #707070;
+    margin-bottom: 1em;
+}
+.widget-recent-post:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.widget-title {
+    text-align: center;
+    font-weight: 700;
+}
+/* footer */
+footer {
+    background-color: #143774;
+    color: rgba(255, 255, 255, .65);
+    text-align: center;
+    padding: .5em;
+}
+footer p {
+    margin: 1em;
+    color: white;
+}
