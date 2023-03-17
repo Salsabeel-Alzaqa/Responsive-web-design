@@ -1,0 +1,8 @@
+p{
+    color: black;
+}
+@media (min-width: 680px) {
+    .article-body {
+        order: 2;
+    }
+}

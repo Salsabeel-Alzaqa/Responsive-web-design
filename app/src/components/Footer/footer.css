@@ -1,0 +1,11 @@
+/* footer */
+footer {
+    background-color: #143774;
+    color: rgba(255, 255, 255, .65);
+    text-align: center;
+    padding: .5em;
+}
+footer p {
+    margin: 1em;
+    color: white;
+}

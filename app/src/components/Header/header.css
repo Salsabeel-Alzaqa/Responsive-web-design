@@ -1,0 +1,32 @@
+/* layout */
+header {
+    /* border: 2px solid #1792d2; */
+    padding: 2em 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0 0 2em 0;
+}
+.container {
+    /* border: 2px solid lightblue; */
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto; 
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media (min-width: 680px) {
+    .container-flex {
+        flex-direction: row;
+    }
+    main {
+        width: 70%;
+    }
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+}
