@@ -1,8 +1,8 @@
 import "./subtitle.css"
-const SubTitle = (props) =>{
+const SubTitle = ({title}) =>{
     return(
     <>
-      <h5>{props.title}</h5>
+      <h5>{title}</h5>
     </>
   )}
 export default SubTitle;

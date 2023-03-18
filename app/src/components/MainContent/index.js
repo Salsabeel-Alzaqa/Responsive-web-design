@@ -7,7 +7,7 @@ const MainContent = () =>{
       <main role="main">
       <LeftSide />
       </main>
-      <aside class="sidebar">
+      <aside className="sidebar">
       <RightSide/>
       </aside>
     </div>

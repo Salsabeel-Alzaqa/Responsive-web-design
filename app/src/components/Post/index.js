@@ -1,8 +1,10 @@
-const Post = (props) =>{
+import SubTitle from "../SubTitle";
+import "./post.css";
+const Post = ({ imageName, name }) => {
     return (
       <>
-      <img src="" alt="ggg"></img>
-      <p>{props.props.name}</p>
+      <SubTitle title={name} />
+      <img src={require('../../images/'+imageName+'.jpg')} alt="img" className="widget-image"/>
       </>
     )
   }

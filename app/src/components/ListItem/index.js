@@ -1,6 +1,6 @@
 import "./listItem.css";
-const ListItem = (props) =>{
+const ListItem = ({title}) =>{
     return(
-      <a href="dd" className="nav-a">{props.title}</a>
+      <a href="dd" className="nav-a">{title}</a>
   )}
 export default ListItem;

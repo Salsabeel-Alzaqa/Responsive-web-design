@@ -1,8 +1,8 @@
 import "./para.css";
-const Para = (props) =>{
+const Para = ({body}) =>{
     return (
       <>
-      <p className="article-body">{props.body}</p>
+      <p className="article-body">{body}</p>
       </>
     )
   }

@@ -4,10 +4,10 @@ import "./rightside.css";
 const RightSide = () =>{
   return(
     <>
-      <div class="sidebar-widget">
+      <div className="sidebar-widget">
       <AboutMe/>
       </div>
-      <div class="sidebar-widget">
+      <div className="sidebar-widget">
       <RecentPosts/>
       </div>
     </>

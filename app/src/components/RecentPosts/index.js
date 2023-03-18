@@ -5,17 +5,17 @@ const RecentPosts = () => {
   const myArray=[
     {
       number:1,
-      imageName:"jj",
+      imageName:"image4",
       name:"Koji Roll ★★★★☆"
     },
     {
-      number:1,
-      imageName:"jj",
+      number:2,
+      imageName:"image5",
       name:"Mix Nigiri ★★★★☆"
     },
     {
-      number:1,
-      imageName:"jj",
+      number:3,
+      imageName:"image6",
       name:"PaniPuri ★★★★☆"
     }
   ]
@@ -26,8 +26,8 @@ const RecentPosts = () => {
           myArray.map((item) =>
           {
             return( 
-            <div class="widget-recent-post" key={item.number}>
-              <Post props={item} />
+            <div className="widget-recent-post" key={item.number}>
+              <Post {...item} />
               </div> )
           })
         }

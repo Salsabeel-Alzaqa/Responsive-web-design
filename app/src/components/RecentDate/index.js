@@ -1,8 +1,8 @@
 import "./recentdate.css";
-const RecentDate = (props) =>{
+const RecentDate = ({ date }) =>{
   return(
     <>
-      <p className="article-info">{props.date}</p>
+      <p className="article-info">{date}</p>
     </>
   )}
 export default RecentDate;

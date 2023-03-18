@@ -3,17 +3,19 @@ import Title from "../Title";
 import Para from "../Para";
 import SubTitle from "../SubTitle";
 import "./recentpost.css";
-const RecentPost = (props) => {
+const RecentPost = ({info,title,body,imageName}) => {
     return (
       <>
       <div className="article-recent-secondary">
-        <img src='' className="article-img" alt=''></img> 
-        <div className="article-info"><RecentDate date={props.item.info}/></div>
+        <img src={require('../../images/'+imageName+'.jpg')} className="article-img" alt=''></img> 
+        <RecentDate date={info}/>
       </div>
       <div className="article-recent-main">
-        <div className="article-title"><Title title={props.item.title}/></div>
-        <div className="article-body"><Para body={props.item.body}/></div>
-        <a href="ll" className="article-read-more"><SubTitle title="Order Now"/></a>
+        <Title title={title}/>
+        <Para body={body}/>
+        <a href="ll" className="article-read-more">
+          <SubTitle title="Order Now" />
+        </a>
       </div>
       </>
     )

@@ -1,0 +1,10 @@
+.widget-image {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.widget-title {
+    text-align: center;
+    font-weight: 700;
+}

@@ -1,8 +1,8 @@
 import "./title.css";
-const Title = (props) =>{
+const Title = ({title}) =>{
     return(
     <>
-      <h2>{props.title}</h2>
+      <h2>{title}</h2>
     </>
   )}
 export default Title;
